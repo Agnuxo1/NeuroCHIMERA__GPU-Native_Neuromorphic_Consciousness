@@ -1,0 +1,172 @@
+{
+  "benchmark": "Matrix Multiplication Comparative Benchmark",
+  "date": "2025-12-02T11:32:17.260042",
+  "system": {
+    "platform": "Windows-10-10.0.19045-SP0",
+    "processor": "Intel64 Family 6 Model 85 Stepping 4, GenuineIntel",
+    "python_version": "3.13.5",
+    "numpy_version": "2.2.6",
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "cuda_version": "12.4"
+  },
+  "configuration": {
+    "matrix_sizes": [
+      1024,
+      2048,
+      4096
+    ],
+    "runs_per_test": 20,
+    "data_type": "float32"
+  },
+  "frameworks": {
+    "size_1024": [
+      {
+        "framework": "NumPy",
+        "device": "CPU",
+        "size": 1024,
+        "mean_time_ms": 5.239610000717221,
+        "std_time_ms": 0.6149731959193392,
+        "gflops": 409.85562812996443,
+        "runs": 20
+      },
+      {
+        "framework": "PyTorch",
+        "device": "CPU",
+        "size": 1024,
+        "mean_time_ms": 2.7547749981749803,
+        "std_time_ms": 0.2602164718479001,
+        "gflops": 779.5495637294129,
+        "runs": 20
+      },
+      {
+        "framework": "PyTorch",
+        "device": "GPU",
+        "size": 1024,
+        "mean_time_ms": 0.18565000136732124,
+        "std_time_ms": 0.017189457900108535,
+        "gflops": 11567.377496276215,
+        "runs": 20
+      }
+    ],
+    "size_2048": [
+      {
+        "framework": "NumPy",
+        "device": "CPU",
+        "size": 2048,
+        "mean_time_ms": 40.31613500192179,
+        "std_time_ms": 2.613941024963635,
+        "gflops": 426.12887329554457,
+        "runs": 20
+      },
+      {
+        "framework": "PyTorch",
+        "device": "CPU",
+        "size": 2048,
+        "mean_time_ms": 23.153074998117518,
+        "std_time_ms": 1.1325564448629633,
+        "gflops": 742.0124188859071,
+        "runs": 20
+      },
+      {
+        "framework": "PyTorch",
+        "device": "GPU",
+        "size": 2048,
+        "mean_time_ms": 0.8957300000474788,
+        "std_time_ms": 0.20650776095288562,
+        "gflops": 19179.74075121897,
+        "runs": 20
+      }
+    ],
+    "size_4096": [
+      {
+        "framework": "NumPy",
+        "device": "CPU",
+        "size": 4096,
+        "mean_time_ms": 238.20749499791418,
+        "std_time_ms": 7.1008292668225215,
+        "gflops": 576.9715746064306,
+        "runs": 20
+      },
+      {
+        "framework": "PyTorch",
+        "device": "CPU",
+        "size": 4096,
+        "mean_time_ms": 193.4817400011525,
+        "std_time_ms": 3.036651816804023,
+        "gflops": 710.3458624632036,
+        "runs": 20
+      },
+      {
+        "framework": "PyTorch",
+        "device": "GPU",
+        "size": 4096,
+        "mean_time_ms": 7.1794150018831715,
+        "std_time_ms": 3.434860845556936,
+        "gflops": 19143.47526030318,
+        "runs": 20
+      }
+    ]
+  },
+  "comparison": {
+    "size_1024": [
+      {
+        "framework": "NumPy",
+        "device": "CPU",
+        "speedup_vs_numpy": 1.0,
+        "gflops": 409.85562812996443
+      },
+      {
+        "framework": "PyTorch",
+        "device": "CPU",
+        "speedup_vs_numpy": 1.9020101475396092,
+        "gflops": 779.5495637294129
+      },
+      {
+        "framework": "PyTorch",
+        "device": "GPU",
+        "speedup_vs_numpy": 28.223053930122486,
+        "gflops": 11567.377496276215
+      }
+    ],
+    "size_2048": [
+      {
+        "framework": "NumPy",
+        "device": "CPU",
+        "speedup_vs_numpy": 1.0,
+        "gflops": 426.12887329554457
+      },
+      {
+        "framework": "PyTorch",
+        "device": "CPU",
+        "speedup_vs_numpy": 1.7412864168236717,
+        "gflops": 742.0124188859071
+      },
+      {
+        "framework": "PyTorch",
+        "device": "GPU",
+        "speedup_vs_numpy": 45.00924943876481,
+        "gflops": 19179.74075121897
+      }
+    ],
+    "size_4096": [
+      {
+        "framework": "NumPy",
+        "device": "CPU",
+        "speedup_vs_numpy": 1.0,
+        "gflops": 576.9715746064306
+      },
+      {
+        "framework": "PyTorch",
+        "device": "CPU",
+        "speedup_vs_numpy": 1.231162666805122,
+        "gflops": 710.3458624632036
+      },
+      {
+        "framework": "PyTorch",
+        "device": "GPU",
+        "speedup_vs_numpy": 33.17923465009781,
+        "gflops": 19143.47526030318
+      }
+    ]
+  }
+}
