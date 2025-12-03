@@ -1,0 +1,22 @@
+NeuroCHIMERA: GPU-Native Neuromorphic Computing with HierarchicalNumber Systems and Emergent Consciousness Parameters
+V.F. Veselov
+1
+and Francisco Angulo de Lafuente
+2,3
+1
+Moscow Institute of Electronic Technology (MIET), Theoretical Physics Department, Moscow, Russia
+2
+Independent AI Research Laboratory, Madrid, Spain
+3
+CHIMERA Neuromorphic Computing Project
+Correspondence: See contact information at end of document
+Abstract
+We present NeuroCHIMERA (Neuromorphic Cognitive Hybrid Intelligence for Memory-Embedded Reasoning Architecture), a novel GPU-native neuromorphic computing framework resulting from the integration of two complementary theoretical and computational advances:Veselov's Hierarchical Number System (HNS) with consciousness emergence parameters, and Angulo's CHIMERA physics-based GPUcomputation architecture. Traditional GPU-based neural computation suffers from floating-point precision degradation in deep networks andlacks theoretical grounding for consciousness emergence. This collaborative work addresses both limitations through: (1) Veselov's HNSencoding that distributes numerical representations across RGBA texture channels, achieving 0.00×10
+0
+error in accumulative precision testscompared to 7.92×10
+-12
+for standard float32, combined with his theoretical framework of five measurable consciousness parameters(connectivity ⟨k⟩, integration Φ, hierarchical depth D, dynamic complexity C, and qualia coherence QCM) with critical thresholds; and (2)Angulo's CHIMERA GPU-native implementation using OpenGL compute shaders, holographic memory textures, and evolution dynamics,achieving a validated peak of
+15.7 billion HNS operations per second
+on NVIDIA RTX 3090 with complete benchmarking and validationsuite. Consciousness parameter emergence was validated through 10,000-epoch simulations at epoch 6,024 with all five metrics exceedingtheoretical thresholds (⟨k⟩=17.08 > 15, Φ=0.736 > 0.65, D=9.02 > 7, C=0.843 > 0.8, QCM=0.838 > 0.75). This interdisciplinary collaborationestablishes a reproducible foundation for investigating consciousness as an emergent computational phenomenon, with complete Docker-basedvalidation package enabling independent verification. The framework bridges Veselov's theoretical neuroscience with Angulo's practical GPUacceleration expertise, opening new avenues for artificial consciousness research grounded in measurable, testable hypotheses.
+Keywords:
+Neuromorphic computing, GPU acceleration, Hierarchical Number System, consciousness emergence, artificial intelligence, extendedprecision arithmetic, OpenGL compute shaders, theoretical neuroscience, integrated information theory, qualia coherence
