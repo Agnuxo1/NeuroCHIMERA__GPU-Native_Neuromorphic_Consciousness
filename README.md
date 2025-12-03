@@ -1,0 +1,2 @@
+# NeuroCHIMERA__GPU-Native_Neuromorphic_Consciousness
+Abstract We present NeuroCHIMERA (Neuromorphic Cognitive Hybrid Intelligence for Memory-Embedded Reasoning Architecture), a novel GPU-native neuromorphic computing framework resulting from the integration of two complementary theoretical and computational advances:Veselov's Hierarchical Number System (HNS) with consciousness emergence parameters
