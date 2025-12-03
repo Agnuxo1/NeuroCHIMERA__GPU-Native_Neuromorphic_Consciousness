@@ -1,39 +1,25 @@
-# Core Dependencies
+# NeuroCHIMERA Dependencies
+# ==========================
+# Core dependencies for running NeuroCHIMERA
+
+# Core Framework
 numpy>=1.24.3
 moderngl>=5.8.2
-Pillow>=10.0.0
-
-# Optional Dependencies for Benchmarking
-PyTorch>=2.1.0
-TensorFlow>=2.15.0
-
-# Development and Testing
-pytest>=7.0.0
-pytest-cov>=4.0.0
-black>=23.0.0
-flake8>=6.0.0
-mypy>=1.0.0
-pre-commit>=3.0.0
-
-# Documentation
-sphinx>=6.0.0
-sphinx-rtd-theme>=1.0.0
+pillow>=10.0.0
 
 # Visualization
-matplotlib>=3.5.0
-seaborn>=0.11.0
-plotly>=5.0.0
+matplotlib>=3.10.0
+seaborn>=0.13.2
 
-# Analysis
-scipy>=1.9.0
-scikit-learn>=1.1.0
-networkx>=3.0.0
-pandas>=1.5.0
+# Testing
+pytest>=7.4.0
+pytest-cov>=4.1.0
 
-# GPU Monitoring
-nvidia-ml-py>=12.0.0
-pynvml>=11.0.0
+# Comparative Benchmarks
+torch>=2.1.0
+tensorflow>=2.15.0
 
-# Performance Profiling
-psutil>=5.9.0
-memory-profiler>=0.60.0
+# Optional: Development
+black>=23.0.0
+pylint>=2.17.0
+mypy>=1.4.0

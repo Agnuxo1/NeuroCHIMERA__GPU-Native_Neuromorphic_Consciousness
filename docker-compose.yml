@@ -1,0 +1,80 @@
+# NeuroCHIMERA Docker Compose Configuration
+# ==========================================
+# Simplified orchestration for running benchmarks
+
+version: '3.8'
+
+services:
+  neurochimera:
+    build: .
+    image: neurochimera:latest
+    container_name: neurochimera-benchmarks
+
+    # GPU support (requires nvidia-docker)
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+
+    # Mount results directory
+    volumes:
+      - ./results:/app/results
+      - ./Benchmarks/benchmark_graphs:/app/Benchmarks/benchmark_graphs
+
+    # Environment variables
+    environment:
+      - CUDA_VISIBLE_DEVICES=0
+      - PYTHONUNBUFFERED=1
+
+    # Default command
+    command: python3 Benchmarks/run_all_benchmarks.py
+
+  # Service for running individual benchmarks
+  gpu-hns:
+    build: .
+    image: neurochimera:latest
+    container_name: neurochimera-gpu-hns
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    volumes:
+      - ./results:/app/results
+    command: python3 Benchmarks/gpu_hns_complete_benchmark.py
+
+  comparative:
+    build: .
+    image: neurochimera:latest
+    container_name: neurochimera-comparative
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    volumes:
+      - ./results:/app/results
+    command: python3 Benchmarks/comparative_benchmark_suite.py
+
+  consciousness:
+    build: .
+    image: neurochimera:latest
+    container_name: neurochimera-consciousness
+    volumes:
+      - ./results:/app/results
+    command: python3 Benchmarks/consciousness_emergence_test.py
+
+  visualize:
+    build: .
+    image: neurochimera:latest
+    container_name: neurochimera-visualize
+    volumes:
+      - ./Benchmarks/benchmark_graphs:/app/Benchmarks/benchmark_graphs
+    command: python3 Benchmarks/visualize_benchmarks.py

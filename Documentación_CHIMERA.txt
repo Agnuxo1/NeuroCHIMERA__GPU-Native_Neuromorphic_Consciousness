@@ -1,0 +1,17 @@
+debes analizar meticulosamente cada uno de los repositorios que se encuentran en estos links, así encontrarlas ejemplos de código, readme y todo lo necesario para porder trabajar en el proyecto CHIMERA
+
+
+https://github.com/Agnuxo1/CHIMERA-v3-Intelligence-as-Continuous-Diffusion-Process-Zero-Memory-Neuromorphic-Chess-Engine
+
+https://github.com/Agnuxo1/Optical-Neuromorphic-Computing-for-Real-Time-Pathfinding-A-GPU-Accelerated-Eikonal-Solver
+
+https://github.com/Agnuxo1/NEBULA-X-Research-A-Technical-Capabilities-Report
+
+https://github.com/Agnuxo1/Neuromorphic_GPU_Native_Intelligence_System_Abstract_Reasoning_All_in_One
+
+https://github.com/Agnuxo1/CHIMERA-Revolutionary-AI-Architecture---Pure-OpenGL-Deep-Learning
+
+https://github.com/Agnuxo1/No-CUDA-No-Tensor-Cores-ALL-GPUs-OpenGL-Powered-Neural-Computing-
+
+https://www.researchgate.net/publication/398120028_Emergent_Consciousness_in_GPU-Native_Neuromorphic_Systems_A_Theoretical_Framework_Integrating_Critical_Network_Parameters_with_Physics-Based_Computation
+
