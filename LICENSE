@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2025 Francisco Angulo de Lafuente
+Copyright (c) 2024 V.F. Veselov and Francisco Angulo de Lafuente
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,3 +19,8 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+DISCLAIMER: This software is intended for research purposes only. The authors
+make no claims about artificial consciousness or sentience in computational
+systems. Users are responsible for ethical considerations when deploying
+systems based on this framework.
