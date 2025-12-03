@@ -1,0 +1,76 @@
+{
+  "benchmark": "CHIMERA vs NumPy",
+  "timestamp": "2025-12-02T20:17:07.718891",
+  "numpy_results": [
+    {
+      "framework": "NumPy",
+      "device": "CPU",
+      "size": 1024,
+      "operations": {
+        "matrix_multiply": {
+          "mean_time_ms": 5.187370000203373,
+          "std_time_ms": 0.673960896985381,
+          "gflops": 413.98312592234737
+        },
+        "elementwise": {
+          "mean_time_ms": 6.869170000572922,
+          "std_time_ms": 0.262858078320829
+        },
+        "convolution": {
+          "mean_time_ms": 23.77702000012505,
+          "std_time_ms": 0.27368704305791763
+        }
+      }
+    },
+    {
+      "framework": "NumPy",
+      "device": "CPU",
+      "size": 2048,
+      "operations": {
+        "matrix_multiply": {
+          "mean_time_ms": 39.04914999729954,
+          "std_time_ms": 3.7100611258405007,
+          "gflops": 439.95501016508894
+        },
+        "elementwise": {
+          "mean_time_ms": 27.396395000687335,
+          "std_time_ms": 1.515404203927303
+        },
+        "convolution": {
+          "mean_time_ms": 94.07164000003831,
+          "std_time_ms": 1.5007799470294907
+        }
+      }
+    }
+  ],
+  "chimera_results": [
+    {
+      "framework": "CHIMERA",
+      "device": "GPU (OpenGL)",
+      "neurons": 1048576,
+      "texture_size": 1024,
+      "operations": {
+        "evolution": {
+          "mean_time_ms": 0.5698450004274491,
+          "std_time_ms": 0.13361510835707596,
+          "throughput_neurons_per_sec": 1840107396.2453785,
+          "gflops": 46.00268490613446
+        }
+      }
+    },
+    {
+      "framework": "CHIMERA",
+      "device": "GPU (OpenGL)",
+      "neurons": 4194304,
+      "texture_size": 2048,
+      "operations": {
+        "evolution": {
+          "mean_time_ms": 3.9810149988625203,
+          "std_time_ms": 3.7429000851762493,
+          "throughput_neurons_per_sec": 1053576537.9428166,
+          "gflops": 26.339413448570415
+        }
+      }
+    }
+  ]
+}

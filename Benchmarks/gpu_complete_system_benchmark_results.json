@@ -1,0 +1,98 @@
+{
+  "evolution_speed": {
+    "test_name": "GPU Evolution Speed",
+    "configurations": [
+      {
+        "neurons": 65536,
+        "texture_size": 256,
+        "total_time": 0.3896160999993299,
+        "iterations": 50,
+        "time_per_step": 0.0077923219999865975,
+        "neurons_per_second": 8410330.065943466,
+        "gflops": 0.21025825164858666
+      },
+      {
+        "neurons": 262144,
+        "texture_size": 512,
+        "total_time": 1.0457690999992337,
+        "iterations": 50,
+        "time_per_step": 0.020915381999984675,
+        "neurons_per_second": 12533550.66621265,
+        "gflops": 0.3133387666553163
+      },
+      {
+        "neurons": 1048576,
+        "texture_size": 1024,
+        "total_time": 4.547813299999689,
+        "iterations": 50,
+        "time_per_step": 0.09095626599999378,
+        "neurons_per_second": 11528353.637561064,
+        "gflops": 0.2882088409390266
+      }
+    ]
+  },
+  "memory_bandwidth": {
+    "test_name": "GPU Memory Bandwidth",
+    "texture_memory_mb": 52.0,
+    "bytes_per_step": 71303168,
+    "bandwidth_gbps": 1.4879203141180333,
+    "time_per_step": 0.04792136199999732
+  },
+  "scaling": {
+    "test_name": "GPU Scaling",
+    "data": [
+      {
+        "neurons": 16384,
+        "texture_size": 128,
+        "time_per_step": 0.005871619999925315,
+        "neurons_per_second": 2790371.311530446,
+        "efficiency": 170.3107489947782
+      },
+      {
+        "neurons": 65536,
+        "texture_size": 256,
+        "time_per_step": 0.010663794999982202,
+        "neurons_per_second": 6145654.525439525,
+        "efficiency": 93.77524605468025
+      },
+      {
+        "neurons": 262144,
+        "texture_size": 512,
+        "time_per_step": 0.029628725000020496,
+        "neurons_per_second": 8847630.129201261,
+        "efficiency": 33.75103046112542
+      },
+      {
+        "neurons": 1048576,
+        "texture_size": 1024,
+        "time_per_step": 0.09674647499996354,
+        "neurons_per_second": 10838389.719112713,
+        "efficiency": 10.336293906319344
+      }
+    ]
+  },
+  "throughput": {
+    "test_name": "GPU Throughput",
+    "operations": {
+      "evolution": {
+        "evolutions_per_second": 10.994689685823213,
+        "neurons_per_second": 11528767.732001761,
+        "time_per_evolution": 0.090952999000001
+      },
+      "learning": {
+        "updates_per_second": 3401360.529130404,
+        "time_per_update": 2.940000013040844e-07
+      }
+    }
+  },
+  "gpu_vs_cpu": {
+    "test_name": "GPU vs CPU",
+    "neurons": 262144,
+    "gpu": {
+      "total_time": 1.3623453000000154,
+      "time_per_step": 0.027246906000000307,
+      "neurons_per_second": 9621055.689772522
+    },
+    "speedup": "N/A (CPU mode not available for comparison)"
+  }
+}

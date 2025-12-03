@@ -1,0 +1,126 @@
+{
+  "benchmark_suite": "GPU HNS Ultra-Optimized",
+  "date": "2025-12-02T11:04:01.779351",
+  "gpu_info": {
+    "renderer": "NVIDIA GeForce RTX 3090/PCIe/SSE2",
+    "version": "4.3.0 NVIDIA 581.29",
+    "vendor": "NVIDIA Corporation"
+  },
+  "optimizations": {
+    "work_group_size": "32x32 (1024 threads)",
+    "batch_processing": "4x parallel",
+    "persistent_kernels": "enabled",
+    "memory_coalescing": "optimized"
+  },
+  "results": {
+    "single_optimized": [
+      {
+        "size": 100000,
+        "runs": 20,
+        "mean_time_ms": 0.09973500273190439,
+        "std_time_ms": 0.15003254556888637,
+        "throughput_ops_per_sec": 1002657013.6946598,
+        "work_groups": [
+          10,
+          10
+        ],
+        "threads_per_group": 1024
+      },
+      {
+        "size": 1000000,
+        "runs": 20,
+        "mean_time_ms": 0.1419499996700324,
+        "std_time_ms": 0.18361702185949788,
+        "throughput_ops_per_sec": 7044734077.66491,
+        "work_groups": [
+          32,
+          32
+        ],
+        "threads_per_group": 1024
+      },
+      {
+        "size": 10000000,
+        "runs": 20,
+        "mean_time_ms": 0.8703900020918809,
+        "std_time_ms": 1.1594799901294532,
+        "throughput_ops_per_sec": 11489102558.584274,
+        "work_groups": [
+          99,
+          99
+        ],
+        "threads_per_group": 1024
+      }
+    ],
+    "batch_4x": [
+      {
+        "size": 100000,
+        "batches": 4,
+        "runs": 20,
+        "mean_time_ms": 0.06533500054501928,
+        "std_time_ms": 0.015409648945378569,
+        "throughput_ops_per_sec": 6122292747.581425,
+        "effective_parallelism": 4.0
+      },
+      {
+        "size": 1000000,
+        "batches": 4,
+        "runs": 20,
+        "mean_time_ms": 0.1937449982506223,
+        "std_time_ms": 0.0142817524462248,
+        "throughput_ops_per_sec": 20645694268.84367,
+        "effective_parallelism": 4.0
+      },
+      {
+        "size": 10000000,
+        "batches": 4,
+        "runs": 20,
+        "mean_time_ms": 10.991004999232246,
+        "std_time_ms": 19.014751882289286,
+        "throughput_ops_per_sec": 3639339623.882813,
+        "effective_parallelism": 4.0
+      }
+    ],
+    "persistent_kernel": [
+      {
+        "size": 100000,
+        "runs": 20,
+        "mean_time_ms": 0.07862499696784653,
+        "std_time_ms": 0.07160595052289481,
+        "throughput_ops_per_sec": 1271860144.4384756,
+        "work_groups": 256,
+        "strategy": "persistent_kernel"
+      },
+      {
+        "size": 1000000,
+        "runs": 20,
+        "mean_time_ms": 0.1732500000798609,
+        "std_time_ms": 0.2186661272759303,
+        "throughput_ops_per_sec": 5772005769.345122,
+        "work_groups": 256,
+        "strategy": "persistent_kernel"
+      },
+      {
+        "size": 10000000,
+        "runs": 20,
+        "mean_time_ms": 0.9010099987790454,
+        "std_time_ms": 1.1423839842642804,
+        "throughput_ops_per_sec": 11098655967.80386,
+        "work_groups": 256,
+        "strategy": "persistent_kernel"
+      }
+    ]
+  },
+  "peak_performance": {
+    "throughput_ops_per_sec": 20645694268.84367,
+    "throughput_billion_ops_per_sec": 20.64569426884367,
+    "configuration": {
+      "size": 1000000,
+      "batches": 4,
+      "runs": 20,
+      "mean_time_ms": 0.1937449982506223,
+      "std_time_ms": 0.0142817524462248,
+      "throughput_ops_per_sec": 20645694268.84367,
+      "effective_parallelism": 4.0
+    }
+  }
+}

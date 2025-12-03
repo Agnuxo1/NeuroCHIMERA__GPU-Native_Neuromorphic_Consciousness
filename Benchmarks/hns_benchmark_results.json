@@ -1,0 +1,87 @@
+{
+  "precision": {
+    "test_name": "Precision with large numbers",
+    "cases": [
+      {
+        "name": "999,999 + 1",
+        "expected": 1000000.0,
+        "float_result": 1000000.0,
+        "float_error": 0.0,
+        "hns_result": 1000000.0,
+        "hns_error": 0.0,
+        "hns_wins": false
+      },
+      {
+        "name": "1,000,000,000 + 1",
+        "expected": 1000000001.0,
+        "float_result": 1000000001.0,
+        "float_error": 0.0,
+        "hns_result": 1000000000.0,
+        "hns_error": 1.0,
+        "hns_wins": false
+      },
+      {
+        "name": "999,999,999,999 + 1",
+        "expected": 1000000000000.0,
+        "float_result": 1000000000000.0,
+        "float_error": 0.0,
+        "hns_result": 999999995904.0,
+        "hns_error": 4096.0,
+        "hns_wins": false
+      },
+      {
+        "name": "500,500,500 + 600,600,600",
+        "expected": 1101101100.0,
+        "float_result": 1101101100.0,
+        "float_error": 0.0,
+        "hns_result": 1101101056.0,
+        "hns_error": 44.0,
+        "hns_wins": false
+      },
+      {
+        "name": "123,456,789 + 987,654,321",
+        "expected": 1111111110.0,
+        "float_result": 1111111110.0,
+        "float_error": 0.0,
+        "hns_result": 1111111168.0,
+        "hns_error": 58.0,
+        "hns_wins": false
+      }
+    ]
+  },
+  "accumulative": {
+    "iterations": 1000000,
+    "expected": 1.0,
+    "float": {
+      "result": 1.000000000007918,
+      "error": 7.918110611626616e-12,
+      "time": 0.03444849999505095
+    },
+    "hns": {
+      "result": 0.0,
+      "error": 1.0,
+      "time": 6.5448329000064405
+    },
+    "hns_better": false
+  },
+  "speed": {
+    "add": {
+      "float": 0.0031426999921677634,
+      "hns": 0.6598565000022063,
+      "overhead": 209.96483967502485
+    },
+    "scale": {
+      "float": 0.0031201999954646453,
+      "hns": 0.6243667000089772,
+      "overhead": 200.10470512035224
+    }
+  },
+  "batch": {
+    "batch_size": 10000,
+    "normalize_time": 0.00045599999430123717,
+    "add_time": 0.000239099987084046,
+    "scale_time": 0.00029490000451914966,
+    "total_time": 0.0009899999859044328,
+    "throughput": 10101010.244827745
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "comparison": {
+    "neurons": 1048576,
+    "iterations": 50,
+    "standard": {
+      "total_time": 1.917931399999361,
+      "time_per_step": 0.03835862799998722,
+      "throughput": 27336118.486832988
+    },
+    "optimized": {
+      "total_time": 0.12014189999899827,
+      "time_per_step": 0.0024028379999799653,
+      "throughput": 436390634.7447239
+    },
+    "speedup": 15.963884373522912,
+    "throughput_improvement": 15.963884373522912
+  },
+  "scaling": {
+    "test_name": "Optimized Scaling",
+    "data": [
+      {
+        "neurons": 262144,
+        "texture_size": 512,
+        "time_per_step": 0.0007371400000010908,
+        "throughput": 355623083.80987614,
+        "gflops": 8.890577095246902
+      },
+      {
+        "neurons": 1048576,
+        "texture_size": 1024,
+        "time_per_step": 0.0020036849999996776,
+        "throughput": 523323775.94290954,
+        "gflops": 13.083094398572738
+      },
+      {
+        "neurons": 4194304,
+        "texture_size": 2048,
+        "time_per_step": 0.0023974400000042807,
+        "throughput": 1749492792.3086755,
+        "gflops": 43.73731980771689
+      }
+    ]
+  }
+}

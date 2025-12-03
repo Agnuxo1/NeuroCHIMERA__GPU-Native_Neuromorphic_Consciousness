@@ -1,0 +1,80 @@
+{
+  "successful_tests": [
+    {
+      "neurons": 2097152,
+      "texture_size": 2048,
+      "memory_mb": 196.0,
+      "success": true,
+      "avg_time_per_step": 0.19124926666639416,
+      "min_time": 0.1622401999993599,
+      "max_time": 0.2411469999988185,
+      "neurons_per_second": 10965542.700135782,
+      "gflops": 0.27413856750339455,
+      "gpu": "NVIDIA GeForce RTX 3090/PCIe/SSE2"
+    },
+    {
+      "neurons": 4194304,
+      "texture_size": 2048,
+      "memory_mb": 196.0,
+      "success": true,
+      "avg_time_per_step": 0.156238100000337,
+      "min_time": 0.13548470000023372,
+      "max_time": 0.19426779999957944,
+      "neurons_per_second": 26845590.16008869,
+      "gflops": 0.6711397540022173,
+      "gpu": "NVIDIA GeForce RTX 3090/PCIe/SSE2"
+    },
+    {
+      "neurons": 8388608,
+      "texture_size": 4096,
+      "memory_mb": 772.0,
+      "success": true,
+      "avg_time_per_step": 0.5959978666663422,
+      "min_time": 0.5240647999999055,
+      "max_time": 0.7211671000004571,
+      "neurons_per_second": 14074896.017532557,
+      "gflops": 0.3518724004383139,
+      "gpu": "NVIDIA GeForce RTX 3090/PCIe/SSE2"
+    },
+    {
+      "neurons": 16777216,
+      "texture_size": 4096,
+      "memory_mb": 772.0,
+      "success": true,
+      "avg_time_per_step": 0.5899342333341338,
+      "min_time": 0.5093919000009919,
+      "max_time": 0.7213798000011593,
+      "neurons_per_second": 28439129.401221793,
+      "gflops": 0.7109782350305448,
+      "gpu": "NVIDIA GeForce RTX 3090/PCIe/SSE2"
+    },
+    {
+      "neurons": 33554432,
+      "texture_size": 8192,
+      "memory_mb": 3076.0,
+      "success": true,
+      "avg_time_per_step": 2.0796940666659793,
+      "min_time": 1.7995184999999765,
+      "max_time": 2.636269299999185,
+      "neurons_per_second": 16134311.549867585,
+      "gflops": 0.40335778874668965,
+      "gpu": "NVIDIA GeForce RTX 3090/PCIe/SSE2"
+    },
+    {
+      "neurons": 67108864,
+      "texture_size": 8192,
+      "memory_mb": 3076.0,
+      "success": true,
+      "avg_time_per_step": 2.218710066666972,
+      "min_time": 1.8546889000008377,
+      "max_time": 2.7218956999986403,
+      "neurons_per_second": 30246792.948847707,
+      "gflops": 0.7561698237211927,
+      "gpu": "NVIDIA GeForce RTX 3090/PCIe/SSE2"
+    }
+  ],
+  "failed_tests": [],
+  "max_successful_size": 67108864,
+  "failure_point": null,
+  "gpu": "NVIDIA GeForce RTX 3090/PCIe/SSE2"
+}

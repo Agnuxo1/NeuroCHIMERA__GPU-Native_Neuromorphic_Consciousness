@@ -1,0 +1,102 @@
+{
+  "benchmark": "CHIMERA vs PyTorch GPU",
+  "timestamp": "2025-12-02T20:17:22.541582",
+  "pytorch_results": [
+    {
+      "framework": "PyTorch",
+      "device": "GPU (CUDA)",
+      "cuda_device": "NVIDIA GeForce RTX 3090",
+      "size": 1024,
+      "operations": {
+        "matrix_multiply": {
+          "mean_time_ms": 0.21364500134950504,
+          "std_time_ms": 0.05298090728220075,
+          "gflops": 10051.64471171923
+        },
+        "neural_ops": {
+          "mean_time_ms": 1.6039449990785215,
+          "std_time_ms": 5.885568528792207
+        },
+        "convolution": {
+          "mean_time_ms": 11.034219998691697,
+          "std_time_ms": 47.297422099244955
+        }
+      },
+      "gpu_utilization": {
+        "mean": 8.0,
+        "std": 4.0,
+        "max": 10.0,
+        "verdict": "FAIL - CPU fallback detected (low GPU usage)"
+      }
+    },
+    {
+      "framework": "PyTorch",
+      "device": "GPU (CUDA)",
+      "cuda_device": "NVIDIA GeForce RTX 3090",
+      "size": 2048,
+      "operations": {
+        "matrix_multiply": {
+          "mean_time_ms": 1.0117250014445744,
+          "std_time_ms": 0.3386309817518015,
+          "gflops": 16980.76963549385
+        },
+        "neural_ops": {
+          "mean_time_ms": 0.9998149995226412,
+          "std_time_ms": 0.12808493534475673
+        },
+        "convolution": {
+          "mean_time_ms": 0.4194849978375714,
+          "std_time_ms": 0.2813591314756219
+        }
+      },
+      "gpu_utilization": {
+        "mean": 2.0,
+        "std": 0.0,
+        "max": 2.0,
+        "verdict": "FAIL - CPU fallback detected (low GPU usage)"
+      }
+    }
+  ],
+  "chimera_results": [
+    {
+      "framework": "CHIMERA",
+      "device": "GPU (OpenGL)",
+      "neurons": 1048576,
+      "texture_size": 1024,
+      "operations": {
+        "evolution": {
+          "mean_time_ms": 0.5483100016135722,
+          "std_time_ms": 0.05585519743148689,
+          "throughput_neurons_per_sec": 1912378028.6958835,
+          "gflops": 47.80945071739709
+        }
+      },
+      "gpu_utilization": {
+        "mean": 6.0,
+        "std": 4.0,
+        "max": 10.0,
+        "verdict": "FAIL - CPU fallback detected (low GPU usage)"
+      }
+    },
+    {
+      "framework": "CHIMERA",
+      "device": "GPU (OpenGL)",
+      "neurons": 4194304,
+      "texture_size": 2048,
+      "operations": {
+        "evolution": {
+          "mean_time_ms": 1.9637400000647176,
+          "std_time_ms": 0.1331619294682213,
+          "throughput_neurons_per_sec": 2135875421.3194065,
+          "gflops": 53.39688553298516
+        }
+      },
+      "gpu_utilization": {
+        "mean": 9.25,
+        "std": 12.55736835487436,
+        "max": 31.0,
+        "verdict": "FAIL - CPU fallback detected (low GPU usage)"
+      }
+    }
+  ]
+}

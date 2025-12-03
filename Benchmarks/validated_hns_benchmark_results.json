@@ -1,0 +1,89 @@
+{
+  "benchmark": "Validated HNS Operations",
+  "timestamp": "2025-12-02T20:37:01.092066",
+  "gpu": "NVIDIA GeForce RTX 3090/PCIe/SSE2",
+  "methodology": {
+    "warmup_iterations": 10,
+    "measurement_runs": 20,
+    "validation": "CPU reference implementation",
+    "timing": "Both with and without ctx.finish() sync"
+  },
+  "results": [
+    {
+      "operation": "addition",
+      "size": 10000,
+      "runs": 20,
+      "validated": true,
+      "max_validation_error": 0.0,
+      "with_sync": {
+        "mean_time_ms": 0.06912999742780812,
+        "std_time_ms": 0.04418435199166429,
+        "throughput_ops_per_sec": 144655003.21250433,
+        "throughput_billion_ops_per_sec": 0.14465500321250432
+      },
+      "without_sync": {
+        "mean_time_ms": 0.0049560000479687005,
+        "throughput_ops_per_sec": 2017756235.5147007,
+        "throughput_billion_ops_per_sec": 2.0177562355147005
+      },
+      "note": "1 operation = 1 HNS element processed (vec4 with carry propagation)"
+    },
+    {
+      "operation": "addition",
+      "size": 100000,
+      "runs": 20,
+      "validated": true,
+      "max_validation_error": 0.0,
+      "with_sync": {
+        "mean_time_ms": 0.08467499937978573,
+        "std_time_ms": 0.09089529559202635,
+        "throughput_ops_per_sec": 1180986132.0633533,
+        "throughput_billion_ops_per_sec": 1.1809861320633532
+      },
+      "without_sync": {
+        "mean_time_ms": 0.005619000003207475,
+        "throughput_ops_per_sec": 17796760979.341045,
+        "throughput_billion_ops_per_sec": 17.796760979341045
+      },
+      "note": "1 operation = 1 HNS element processed (vec4 with carry propagation)"
+    },
+    {
+      "operation": "addition",
+      "size": 1000000,
+      "runs": 20,
+      "validated": true,
+      "max_validation_error": 0.0,
+      "with_sync": {
+        "mean_time_ms": 0.12924000111524947,
+        "std_time_ms": 0.06911122953934604,
+        "throughput_ops_per_sec": 7737542489.7145605,
+        "throughput_billion_ops_per_sec": 7.737542489714561
+      },
+      "without_sync": {
+        "mean_time_ms": 0.06789100007154047,
+        "throughput_ops_per_sec": 14729492848.039433,
+        "throughput_billion_ops_per_sec": 14.729492848039433
+      },
+      "note": "1 operation = 1 HNS element processed (vec4 with carry propagation)"
+    },
+    {
+      "operation": "addition",
+      "size": 10000000,
+      "runs": 20,
+      "validated": true,
+      "max_validation_error": 0.0,
+      "with_sync": {
+        "mean_time_ms": 8.783889998449013,
+        "std_time_ms": 0.826823592542094,
+        "throughput_ops_per_sec": 1138447772.2018056,
+        "throughput_billion_ops_per_sec": 1.1384477722018056
+      },
+      "without_sync": {
+        "mean_time_ms": 2.2761289999471046,
+        "throughput_ops_per_sec": 4393424098.648359,
+        "throughput_billion_ops_per_sec": 4.393424098648359
+      },
+      "note": "1 operation = 1 HNS element processed (vec4 with carry propagation)"
+    }
+  ]
+}

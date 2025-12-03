@@ -1,0 +1,115 @@
+{
+  "evolution_speed": {
+    "test_name": "Evolution Speed",
+    "configurations": [
+      {
+        "neurons": 65536,
+        "texture_size": 256,
+        "total_time": 0.006085700006224215,
+        "iterations": 20,
+        "time_per_step": 0.00030428500031121075,
+        "neurons_per_second": 215377031.18120298,
+        "memory_mb": 99.2890625
+      },
+      {
+        "neurons": 262144,
+        "texture_size": 512,
+        "total_time": 0.014235199996619485,
+        "iterations": 20,
+        "time_per_step": 0.0007117599998309743,
+        "neurons_per_second": 368303922.75802636,
+        "memory_mb": 119.55859375
+      },
+      {
+        "neurons": 1048576,
+        "texture_size": 1024,
+        "total_time": 0.2133859999885317,
+        "iterations": 20,
+        "time_per_step": 0.010669299999426585,
+        "neurons_per_second": 98279737.19516324,
+        "memory_mb": 177.71484375
+      }
+    ]
+  },
+  "memory_efficiency": {
+    "test_name": "Memory Efficiency",
+    "configurations": [
+      {
+        "neurons": 65536,
+        "texture_size": 256,
+        "memory_used_mb": 9.8515625,
+        "theoretical_texture_mb": 7.0,
+        "efficiency": 0.7105471847739889
+      },
+      {
+        "neurons": 262144,
+        "texture_size": 512,
+        "memory_used_mb": 12.83984375,
+        "theoretical_texture_mb": 16.0,
+        "efficiency": 1.246121083054457
+      },
+      {
+        "neurons": 1048576,
+        "texture_size": 1024,
+        "memory_used_mb": 48.6484375,
+        "theoretical_texture_mb": 52.0,
+        "efficiency": 1.068893528183716
+      }
+    ]
+  },
+  "scalability": {
+    "test_name": "Scalability",
+    "data": [
+      {
+        "neurons": 16384,
+        "texture_size": 128,
+        "step_time": 0.0028051999979652464,
+        "time_per_neuron": 1.712158201883085e-07,
+        "neurons_per_second": 5840581.780936883,
+        "memory_mb": 115.96484375
+      },
+      {
+        "neurons": 65536,
+        "texture_size": 256,
+        "step_time": 0.004640900006052107,
+        "time_per_neuron": 7.081451425250407e-08,
+        "neurons_per_second": 14121398.848183712,
+        "memory_mb": 118.296875
+      },
+      {
+        "neurons": 262144,
+        "texture_size": 512,
+        "step_time": 0.012774599992553703,
+        "time_per_neuron": 4.873123166104776e-08,
+        "neurons_per_second": 20520720.81730961,
+        "memory_mb": 134.5390625
+      },
+      {
+        "neurons": 1048576,
+        "texture_size": 1024,
+        "step_time": 0.04703909999807365,
+        "time_per_neuron": 4.4859981535028126e-08,
+        "neurons_per_second": 22291582.960620873,
+        "memory_mb": 182.42578125
+      }
+    ]
+  },
+  "throughput": {
+    "test_name": "Throughput",
+    "operations": {
+      "evolution": {
+        "evolutions_per_second": 230.5726409877736,
+        "neurons_per_second": 241772937.5963957,
+        "time_per_evolution": 0.004337028000009013
+      },
+      "learning": {
+        "updates_per_second": 0.021153431587388798,
+        "time_per_update": 47.27365372699991
+      },
+      "metrics": {
+        "calculations_per_second": 0.1621470529491777,
+        "time_per_calculation": 6.167241290000093
+      }
+    }
+  }
+}

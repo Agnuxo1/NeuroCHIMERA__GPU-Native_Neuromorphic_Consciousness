@@ -1,0 +1,102 @@
+{
+  "benchmark": "Pure HNS Operations",
+  "timestamp": "2025-12-02T20:31:51.202604",
+  "gpu": "NVIDIA GeForce RTX 3090/PCIe/SSE2",
+  "opengl": "4.3.0 NVIDIA 581.29",
+  "paper_claims": {
+    "addition_10M": "15.9 billion ops/s",
+    "scaling_10M": "19.8 billion ops/s"
+  },
+  "addition_results": [
+    {
+      "operation": "addition",
+      "size": 10000,
+      "runs": 20,
+      "mean_time_ms": 0.06787500169593841,
+      "std_time_ms": 0.06543730519379462,
+      "min_time_ms": 0.042400002712383866,
+      "max_time_ms": 0.338099998771213,
+      "throughput_ops_per_sec": 147329646.41087285,
+      "throughput_billion_ops_per_sec": 0.14732964641087284
+    },
+    {
+      "operation": "addition",
+      "size": 100000,
+      "runs": 20,
+      "mean_time_ms": 0.057854999613482505,
+      "std_time_ms": 0.02244886156444551,
+      "min_time_ms": 0.04749999789055437,
+      "max_time_ms": 0.14379998901858926,
+      "throughput_ops_per_sec": 1728459090.278795,
+      "throughput_billion_ops_per_sec": 1.728459090278795
+    },
+    {
+      "operation": "addition",
+      "size": 1000000,
+      "runs": 20,
+      "mean_time_ms": 0.10354999976698309,
+      "std_time_ms": 0.010385446594100553,
+      "min_time_ms": 0.09649999265093356,
+      "max_time_ms": 0.1453000004403293,
+      "throughput_ops_per_sec": 9657170470.789803,
+      "throughput_billion_ops_per_sec": 9.657170470789803
+    },
+    {
+      "operation": "addition",
+      "size": 10000000,
+      "runs": 20,
+      "mean_time_ms": 0.6237150002561975,
+      "std_time_ms": 0.015431664095724698,
+      "min_time_ms": 0.6135000003268942,
+      "max_time_ms": 0.6753999914508313,
+      "throughput_ops_per_sec": 16032963766.932644,
+      "throughput_billion_ops_per_sec": 16.032963766932642
+    }
+  ],
+  "scaling_results": [
+    {
+      "operation": "scaling",
+      "size": 10000,
+      "runs": 20,
+      "mean_time_ms": 0.05536499884328805,
+      "std_time_ms": 0.026922654468172613,
+      "min_time_ms": 0.04400000034365803,
+      "max_time_ms": 0.16660000255797058,
+      "throughput_ops_per_sec": 180619528.74423856,
+      "throughput_billion_ops_per_sec": 0.18061952874423856
+    },
+    {
+      "operation": "scaling",
+      "size": 100000,
+      "runs": 20,
+      "mean_time_ms": 0.05937999812886119,
+      "std_time_ms": 0.0143570039391433,
+      "min_time_ms": 0.04809998790733516,
+      "max_time_ms": 0.10459999612066895,
+      "throughput_ops_per_sec": 1684068763.0705023,
+      "throughput_billion_ops_per_sec": 1.6840687630705022
+    },
+    {
+      "operation": "scaling",
+      "size": 1000000,
+      "runs": 20,
+      "mean_time_ms": 0.08780000134720467,
+      "std_time_ms": 0.0105579831667608,
+      "min_time_ms": 0.08119999256450683,
+      "max_time_ms": 0.13040000339969993,
+      "throughput_ops_per_sec": 11389521465.330107,
+      "throughput_billion_ops_per_sec": 11.389521465330107
+    },
+    {
+      "operation": "scaling",
+      "size": 10000000,
+      "runs": 20,
+      "mean_time_ms": 0.43947999947704375,
+      "std_time_ms": 0.010250931913995398,
+      "min_time_ms": 0.43169999844394624,
+      "max_time_ms": 0.47280000580940396,
+      "throughput_ops_per_sec": 22754164039.090363,
+      "throughput_billion_ops_per_sec": 22.754164039090362
+    }
+  ]
+}
