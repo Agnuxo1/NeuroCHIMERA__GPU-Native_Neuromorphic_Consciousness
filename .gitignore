@@ -1,8 +1,48 @@
+# Python
 __pycache__/
+*.py[cod]
 *.pyc
-.env
+*.pyo
+*.pyd
 venv/
-*.bin
+.venv/
+env/
+.env
+*.env
+
+# Large model files
 *.pkl
+*.pth
+*.pt
 *.h5
+*.hdf5
+*.bin
+*.weights
+*.onnx
 checkpoints/
+
+# Large binary installers
+*.exe
+*.msi
+*.dmg
+
+# Docker
+.dockerignore
+
+# Logs
+*.log
+logs/
+
+# Benchmark raw caches
+Benchmarks/*.raw
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*~
