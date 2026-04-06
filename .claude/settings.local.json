@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python debug_hns_accumulative.py:*)",
+      "Bash(python:*)",
+      "Bash(cat:*)",
+      "Bash(docker --version:*)",
+      "Bash(where:*)",
+      "Bash(timeout 180 python:*)",
+      "Bash(tee:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
