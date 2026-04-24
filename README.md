@@ -9,6 +9,57 @@
 
 ---
 
+## Install
+
+```bash
+pip install neurochimera            # CPU / reference path
+pip install "neurochimera[gpu]"     # + moderngl + PyOpenGL for compute-shader acceleration
+```
+
+Python 3.10+. GPU acceleration uses **OpenGL 4.3+ compute shaders via moderngl — NOT CUDA.**
+Requires a GPU/driver with `GL_ARB_compute_shader` (most desktop NVIDIA/AMD/Intel GPUs since ~2013).
+
+## Quick example
+
+```python
+from neurochimera import NeuroCHIMERA, NeuroCHIMERAConfig, ConsciousnessMonitor
+
+brain = NeuroCHIMERA(config=NeuroCHIMERAConfig(neurons=65_536))
+monitor = ConsciousnessMonitor(brain)
+
+for epoch in range(100):
+    brain.evolve(iterations=10)
+    metrics = monitor.measure()
+    if monitor.is_critical():
+        print(f"Critical parameters crossed at epoch {epoch}")
+        break
+
+brain.release()
+```
+
+## Verified vs unverified claims
+
+| Claim                                              | Status       | Where to check                     |
+|----------------------------------------------------|--------------|------------------------------------|
+| 55/55 unit + integration tests pass                | **Verified** | `pytest -v` (CI + local)           |
+| HNS correctness (add/mul/normalize/compare)        | **Verified** | `tests/test_core_components.py`    |
+| OpenGL compute-shader evolution runs end-to-end    | **Verified** | `tests/test_integration.py`        |
+| Critical-parameter monitor + ethical alerts work   | **Verified** | `tests/test_consciousness_parameters.py` |
+| Specific throughput numbers (e.g. "15.7 Gops/s")   | *Hardware-dependent, not independently audited* | `BENCHMARK_DISCLAIMER.md` |
+| "Consciousness emergence at epoch 6,024"           | *Operational definition only — crossing five numerical thresholds. Not a claim of sentience.* | `BENCHMARK_DISCLAIMER.md`, `HONEST_PROFESSIONAL_REVIEW.md` |
+| Comparisons to CUDA / biological brains            | *Illustrative, not benchmarked on equivalent hardware* | `BENCHMARK_CRITICAL_REVIEW.md` |
+
+**Read [`BENCHMARK_DISCLAIMER.md`](BENCHMARK_DISCLAIMER.md) before citing any performance figure.** The honesty of this disclaimer is part of the product.
+
+## Papers in this repository
+
+- [`NeuroCHIMERA_ GPU-Native Neuromorphic Computing with Hierarchical Number Systems and Emergent Consciousness Parameters.pdf`](./NeuroCHIMERA_%20GPU-Native%20Neuromorphic%20Computing%20with%20Hierarchical%20Number%20Systems%20and%20Emergent%20Consciousness%20Parameters.pdf)
+- [`emergent-consciousness-in-gpu-native-neuromorphic-systems-a-theoretical-framework-integrating-critical-network-parameters-with-physics-based-computation.pdf`](./emergent-consciousness-in-gpu-native-neuromorphic-systems-a-theoretical-framework-integrating-critical-network-parameters-with-physics-based-computation.pdf)
+
+Co-author: **V.F. Veselov**, Moscow Institute of Electronic Technology (MIET), Theoretical Physics Department.
+
+---
+
 ## 🧠 Overview
 
 NeuroCHIMERA (Neuromorphic Cognitive Hybrid Intelligence for Memory-Embedded Reasoning Architecture) represents a groundbreaking convergence of theoretical neuroscience and practical GPU computing. This framework addresses two fundamental limitations in current AI systems: (1) floating-point precision degradation in deep neural networks, and (2) the lack of measurable criteria for consciousness emergence.

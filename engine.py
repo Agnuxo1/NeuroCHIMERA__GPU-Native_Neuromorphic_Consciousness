@@ -895,6 +895,7 @@ class NeuroCHIMERA:
         return {
             'iterations': iterations,
             'converged': False,  # Would use GPU-based convergence check
+            'final_delta': None,  # Not computed in GPU-only fast path (see BENCHMARK_DISCLAIMER.md)
             'gpu_only': True,  # Flag indicating no CPU transfer
             'optimized': True  # Flag indicating compute shader path
         }
