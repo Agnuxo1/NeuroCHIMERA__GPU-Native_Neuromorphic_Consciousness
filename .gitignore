@@ -46,3 +46,9 @@ desktop.ini
 .vscode/
 *.swp
 *~
+
+# Packaging
+dist/
+build/
+*.egg-info/
+src/*.egg-info/
