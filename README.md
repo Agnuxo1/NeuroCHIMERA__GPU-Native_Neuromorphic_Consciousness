@@ -1,5 +1,11 @@
 # NeuroCHIMERA: GPU-Native Neuromorphic Computing with Hierarchical Number Systems and Emergent Consciousness Parameters
 
+[![PyPI version](https://img.shields.io/pypi/v/neurochimera)](https://pypi.org/project/neurochimera/)
+[![PyPI downloads](https://img.shields.io/pypi/dm/neurochimera)](https://pypi.org/project/neurochimera/)
+[![License](https://img.shields.io/github/license/Agnuxo1/NeuroCHIMERA__GPU-Native_Neuromorphic_Consciousness)](https://github.com/Agnuxo1/NeuroCHIMERA__GPU-Native_Neuromorphic_Consciousness/blob/main/LICENSE)
+[![Python](https://img.shields.io/pypi/pyversions/neurochimera)](https://pypi.org/project/neurochimera/)
+[![GitHub stars](https://img.shields.io/github/stars/Agnuxo1/NeuroCHIMERA__GPU-Native_Neuromorphic_Consciousness?style=social)](https://github.com/Agnuxo1/NeuroCHIMERA__GPU-Native_Neuromorphic_Consciousness)
+
 **A Novel Framework for Investigating Artificial Consciousness Through GPU-Native Neuromorphic Computing**
 
 *Authors: V.F. Veselov¹ and Francisco Angulo de Lafuente²,³*  
@@ -471,3 +477,22 @@ We thank the broader open-source AI research community for frameworks and tools 
 *Last updated: December 2024*  
 *Version: 1.0.0*  
 *Status: Research Framework - Open Source*
+
+---
+
+## Related projects
+
+Part of the [@Agnuxo1](https://github.com/Agnuxo1) v1.0.0 open-source catalog (April 2026).
+
+**AgentBoot constellation** — agents and research loops
+- [AgentBoot](https://github.com/Agnuxo1/AgentBoot) — Conversational AI agent for bare-metal hardware detection and OS install.
+- [autoresearch-nano](https://github.com/Agnuxo1/autoresearch) — nanoGPT-based autonomous ML research loop.
+- [The Living Agent](https://github.com/Agnuxo1/The-Living-Agent) — 16x16 Chess-Grid autonomous research agent.
+- [benchclaw-integrations](https://github.com/Agnuxo1/benchclaw-integrations) — Agent-framework adapters for the BenchClaw API.
+
+**CHIMERA / neuromorphic constellation** — GPU-native scientific computing
+- [Holographic-Reservoir](https://github.com/Agnuxo1/Holographic-Reservoir) — Reservoir computing with simulated ASIC backend.
+- [ASIC-RAG-CHIMERA](https://github.com/Agnuxo1/ASIC-RAG-CHIMERA) — GPU simulation of a SHA-256 hash engine wired into a RAG pipeline.
+- [QESN-MABe](https://github.com/Agnuxo1/QESN_MABe_V2_REPO) — Quantum-inspired Echo State Network on a 2D lattice (classical).
+- [ARC2-CHIMERA](https://github.com/Agnuxo1/ARC2_CHIMERA) — Research PoC: OpenGL primitives for symbolic reasoning.
+- [Quantum-GPS](https://github.com/Agnuxo1/Quantum-GPS-Unified-Navigation-System) — Quantum-inspired GPU navigator (classical Eikonal solver).
