@@ -27,12 +27,12 @@ Quick Start:
         if monitor.is_critical():
             print("Consciousness emergence detected!")
 
-License: MIT
+License: Apache-2.0
 """
 
 __version__ = "1.0.0"
 __author__ = "V.F. Veselov & Francisco Angulo de Lafuente"
-__license__ = "MIT"
+__license__ = "Apache-2.0"
 
 # Core imports
 # NOTE:
@@ -48,8 +48,8 @@ try:
         NeuromorphicFrame,
         create_brain,
     )
-except ImportError:  # Fallback to flat layout
-    from .engine import (
+except ImportError:  # Fallback to flat layout when loaded as a top-level shim
+    from engine import (
         NeuroCHIMERA,
         NeuroCHIMERAConfig,
         NeuromorphicFrame,
@@ -71,8 +71,8 @@ try:
         BASE,
         INV_BASE,
     )
-except ImportError:  # Fallback to flat layout
-    from .hierarchical_number import (
+except ImportError:  # Fallback to flat layout when loaded as a top-level shim
+    from hierarchical_number import (
         HNumber,
         hns_add,
         hns_scale,
@@ -95,8 +95,8 @@ try:
         AlertConfig,
         EthicalProtocol,
     )
-except ImportError:  # Fallback to flat layout
-    from .consciousness_monitor import (
+except ImportError:  # Fallback to flat layout when loaded as a top-level shim
+    from consciousness_monitor import (
         ConsciousnessMonitor,
         ConsciousnessMetrics,
         ConsciousnessLevel,
@@ -137,3 +137,4 @@ __all__ = [
     'AlertConfig',
     'EthicalProtocol',
 ]
+
