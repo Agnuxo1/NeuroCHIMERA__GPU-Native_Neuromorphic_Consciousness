@@ -1,4 +1,12 @@
 # NeuroCHIMERA: GPU-Native Neuromorphic Computing with Hierarchical Number Systems and Emergent Consciousness Parameters
+<!--
+Project: NeuroCHIMERA
+Author: Francisco Angulo de Lafuente
+ORCID: https://orcid.org/0009-0001-1634-7063
+Copyright (c) 2024 Francisco Angulo de Lafuente
+Attribution recorded: 2026-11-05
+--
+
 
 [![PyPI version](https://img.shields.io/pypi/v/neurochimera)](https://pypi.org/project/neurochimera/)
 [![PyPI downloads](https://img.shields.io/pypi/dm/neurochimera)](https://pypi.org/project/neurochimera/)
@@ -8,10 +16,11 @@
 
 **A Novel Framework for Investigating Artificial Consciousness Through GPU-Native Neuromorphic Computing**
 
-*Authors: V.F. Veselov¹ and Francisco Angulo de Lafuente²,³*  
+*Authors: V.F. Veselov¹ and Francisco Angulo de Lafuente ([ORCID: 0009-0001-1634-7063](https://orcid.org/0009-0001-1634-7063))²,³*<br>
 *¹Moscow Institute of Electronic Technology (MIET), Theoretical Physics Department, Moscow, Russia*  
 *²Independent AI Research Laboratory, Madrid, Spain*  
 *³CHIMERA Neuromorphic Computing Project*
+*Attribution record: Francisco Angulo de Lafuente; copyright (c) 2024; recorded 2026-11-05.*
 
 ---
 
@@ -428,6 +437,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 ## 📮 Citation
+For software citation, use [CITATION.cff](CITATION.cff), which retains both listed authors, version 1.0.0, and the existing release date. The repository contains conflicting MIT and Apache-2.0 declarations; see [LICENSE_SCOPE.md](LICENSE_SCOPE.md) before determining reuse rights.
+
 
 If you use NeuroCHIMERA in your research, please cite:
 

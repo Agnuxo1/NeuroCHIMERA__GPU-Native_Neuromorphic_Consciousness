@@ -1,0 +1,185 @@
+{
+  "schema_version": "1.0",
+  "project": "NeuroCHIMERA",
+  "author": "Francisco Angulo de Lafuente",
+  "orcid": "https://orcid.org/0009-0001-1634-7063",
+  "copyright_year": 2024,
+  "copyright_year_basis": "Supplied by the rights holder for this attribution record.",
+  "recorded_on": "2026-11-05",
+  "canonical_url": "https://github.com/Agnuxo1/NeuroCHIMERA__GPU-Native_Neuromorphic_Consciousness",
+  "source_revision": "5b925d383713174a4b9ca65d4b1b71ee5e9a4c99",
+  "attribution_scope": {
+    "source_and_configuration_files": [
+      ".github/workflows/ci.yml",
+      ".gitignore",
+      "Benchmarks/benchmark_comparative.py",
+      "Benchmarks/benchmark_gpu_complete_system.py",
+      "Benchmarks/benchmark_gpu_stress_test.py",
+      "Benchmarks/benchmark_gpu_utilization.py",
+      "Benchmarks/benchmark_gpu_validation_suite.py",
+      "Benchmarks/benchmark_hns_comprehensive.py",
+      "Benchmarks/benchmark_hns_pure_operations.py",
+      "Benchmarks/benchmark_hns_texture.py",
+      "Benchmarks/benchmark_hns_validated.py",
+      "Benchmarks/benchmark_neurochimera_system.py",
+      "Benchmarks/benchmark_optimized_gpu.py",
+      "Benchmarks/benchmark_optimized_stress_test.py",
+      "Benchmarks/benchmark_optimized_stress_test_direct.py",
+      "Benchmarks/benchmark_vs_numpy.py",
+      "Benchmarks/benchmark_vs_pytorch_gpu.py",
+      "Benchmarks/comparative_benchmark_suite.py",
+      "Benchmarks/consciousness_emergence_test.py",
+      "Benchmarks/gpu_hns_complete_benchmark.py",
+      "Benchmarks/gpu_hns_mega_scale.py",
+      "Benchmarks/gpu_hns_precision_benchmark.py",
+      "Benchmarks/gpu_hns_ultra_optimized.py",
+      "Benchmarks/gpu_saturation_benchmark.py",
+      "Benchmarks/gpu_utilization_validator.py",
+      "Benchmarks/hns_benchmark.py",
+      "Benchmarks/hns_gpu_benchmark.py",
+      "Benchmarks/hns_test.py",
+      "Benchmarks/mlperf_resnet50_skeleton.py",
+      "Benchmarks/monitor_gpu_utilization.py",
+      "Benchmarks/quick_gpu_test.py",
+      "Benchmarks/run_all_benchmarks.py",
+      "Benchmarks/validate_hns_fix.py",
+      "Benchmarks/visualize_benchmarks.py",
+      "Comprehensive Paper README Guide/examples/basic_consciousness_simulation.py",
+      "Comprehensive Paper README Guide/install.sh",
+      "Comprehensive Paper README Guide/requirements.txt",
+      "Dockerfile",
+      "__init__.py",
+      "basic_consciousness_simulation.py",
+      "benchmark_complete_system.py",
+      "consciousness_monitor.py",
+      "create_visualizations.py",
+      "debug_hns_accumulative.py",
+      "docker-compose.yml",
+      "document_execution_results.py",
+      "engine.py",
+      "engine_batched.py",
+      "engine_multi_core.py",
+      "engine_optimized.py",
+      "generate_benchmark_report.py",
+      "generate_consciousness_report.py",
+      "hierarchical_number.py",
+      "hns_core.glsl",
+      "install.sh",
+      "pyproject.toml",
+      "requirements.txt",
+      "run_all_tests_and_benchmarks.py",
+      "run_consciousness_emergence.py",
+      "src/neurochimera/__init__.py",
+      "src/neurochimera/consciousness_monitor.py",
+      "src/neurochimera/engine.py",
+      "src/neurochimera/hierarchical_number.py",
+      "src/neurochimera/hns_core.glsl",
+      "test_batched_demo.py",
+      "test_batched_gpt5_scale.py",
+      "tests/test_consciousness_parameters.py",
+      "tests/test_core_components.py",
+      "tests/test_integration.py"
+    ],
+    "maintained_documents": [
+      "BENCHMARK_CRITICAL_REVIEW.md",
+      "BENCHMARK_DISCLAIMER.md",
+      "COMPLETE_ROADMAP_TO_COMPLETION.md",
+      "CONTRIBUTING.md",
+      "Comprehensive Paper README Guide/CONTRIBUTING.md",
+      "GENERATE_PDF_INSTRUCTIONS.md",
+      "GPU_OPTIMIZATION_ANALYSIS.md",
+      "OPTIMIZATION_PLAN.md",
+      "PROJECT_ROADMAP.md",
+      "README.md",
+      "REPRODUCIBILITY_GUIDE.md",
+      "TESTING_AND_BENCHMARKING_GUIDE.md"
+    ],
+    "project_index_pages": [
+      "Comprehensive Paper README Guide/index.html",
+      "index.html"
+    ],
+    "citation_metadata": [
+      "CITATION.cff"
+    ],
+    "sidecars": [
+      "DOCUMENT_ATTRIBUTION.md",
+      "LICENSE_SCOPE.md",
+      "provenance.json"
+    ]
+  },
+  "license_scope": {
+    "status": "unresolved_conflict",
+    "evidence": [
+      {
+        "file": "LICENSE",
+        "declaration": "Apache-2.0"
+      },
+      {
+        "file": "pyproject.toml",
+        "declaration": "Apache-2.0"
+      },
+      {
+        "file": "CITATION.cff",
+        "declaration": "Apache-2.0; existing field preserved"
+      },
+      {
+        "file": "README.md",
+        "declaration": "MIT License"
+      },
+      {
+        "file": "Comprehensive Paper README Guide/index.html",
+        "declaration": "linked LICENSE described as MIT"
+      },
+      {
+        "file": "engine.py",
+        "declaration": "existing comment says MIT"
+      },
+      {
+        "file": "src/neurochimera/engine.py",
+        "declaration": "existing comment says MIT"
+      },
+      {
+        "file": "__init__.py",
+        "declaration": "existing module metadata says Apache-2.0"
+      },
+      {
+        "file": "src/neurochimera/__init__.py",
+        "declaration": "existing module metadata says Apache-2.0"
+      }
+    ],
+    "treatment": "Existing declarations were preserved. All newly added SPDX identifiers and reuse claims were removed; this record does not determine intended license or scope.",
+    "existing_license_modified": false,
+    "new_license_grant": false,
+    "spdx_added": false,
+    "papers_reports_data_figures_results": "No license scope inferred; preserved without changes."
+  },
+  "citation_metadata_preserved": {
+    "citation_cff_version": "1.0.0",
+    "citation_cff_date_released": "2026-04-25",
+    "authors": [
+      "Francisco Angulo de Lafuente",
+      "V.F. Veselov"
+    ],
+    "license": "Apache-2.0",
+    "bibtex_file": "CITATION.bib",
+    "verified_doi": null,
+    "bibtex_entries_edited": false
+  },
+  "authorship_basis": "Owner-directed attribution; selected-file Git first-touch history records Francisco Angulo de Lafuente. Existing coauthor credits are retained; history is supporting provenance, not proof of authorship of every line.",
+  "contest_rules": "No specific contest or edition was identified in the repository.",
+  "baseline": {
+    "baseline_commit": "5b925d383713174a4b9ca65d4b1b71ee5e9a4c99",
+    "inventory_storage": "Maintainer-held record outside the repository.",
+    "tracked_files_hashed": 84,
+    "method": "SHA-256 over exact pre-edit checked-out bytes plus independent original Git blob IDs."
+  },
+  "preserved_categories": [
+    "paper/manuscript artifacts",
+    "research, certification and validation reports",
+    "PDF/PPTX and paper HTML",
+    "generated JSON/PNG results",
+    "BibTeX entries",
+    "legacy docs with conflicting MIT references",
+    "local agent settings not reviewed or changed"
+  ]
+}

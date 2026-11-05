@@ -1,4 +1,15 @@
 # Contributing to NeuroCHIMERA
+<!--
+Project: NeuroCHIMERA
+Author: Francisco Angulo de Lafuente
+ORCID: https://orcid.org/0009-0001-1634-7063
+Copyright (c) 2024 Francisco Angulo de Lafuente
+Attribution recorded: 2026-11-05
+-->
+
+> **Attribution:** Author: Francisco Angulo de Lafuente; ORCID: [0009-0001-1634-7063](https://orcid.org/0009-0001-1634-7063); Project: NeuroCHIMERA; Copyright (c) 2024; recorded 2026-11-05.
+> **Citation and license scope:** Cite [CITATION.cff](CITATION.cff). The repository contains conflicting MIT and Apache-2.0 declarations; see [LICENSE_SCOPE.md](LICENSE_SCOPE.md) before reuse.
+
 
 Thank you for your interest in contributing to NeuroCHIMERA! This document provides guidelines and instructions for contributing to our GPU-native neuromorphic computing framework.
 

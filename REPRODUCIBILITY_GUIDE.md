@@ -1,4 +1,14 @@
 # NeuroCHIMERA Reproducibility Guide
+<!--
+Project: NeuroCHIMERA
+Author: Francisco Angulo de Lafuente
+ORCID: https://orcid.org/0009-0001-1634-7063
+Copyright (c) 2024 Francisco Angulo de Lafuente
+Attribution recorded: 2026-11-05
+-->
+
+> **Attribution:** Author: Francisco Angulo de Lafuente; ORCID: [0009-0001-1634-7063](https://orcid.org/0009-0001-1634-7063); Project: NeuroCHIMERA; Copyright (c) 2024; recorded 2026-11-05.
+
 
 **Version:** 1.0
 **Date:** 2025-12-02
@@ -391,6 +401,8 @@ python compare_results.py \
 ---
 
 ## Citation
+For citation, use [CITATION.cff](CITATION.cff). The repository contains conflicting MIT and Apache-2.0 declarations; see [LICENSE_SCOPE.md](LICENSE_SCOPE.md) before reuse.
+
 
 If you reproduce these results in your research, please cite:
 
