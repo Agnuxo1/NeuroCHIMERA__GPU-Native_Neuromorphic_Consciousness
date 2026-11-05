@@ -1,3 +1,9 @@
+# Project: NeuroCHIMERA
+# Author: Francisco Angulo de Lafuente
+# ORCID: https://orcid.org/0009-0001-1634-7063
+# Copyright (c) 2024 Francisco Angulo de Lafuente
+# Attribution recorded: 2026-11-05
+
 """
 Direct Optimized GPU Stress Test: Maximum Network Size
 ======================================================
