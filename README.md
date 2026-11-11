@@ -1,3 +1,7 @@
+<!-- impact-note:start -->
+<sub><strong>Efficiency and practical value.</strong> NeuroCHIMERA makes neuromorphic state evolution and hierarchical-number arithmetic available through an OpenGL compute-shader path with a CPU reference option. This broadens the experimental route beyond CUDA-specific implementations and lets researchers reuse common monitoring tools. The <a href="BENCHMARK_DISCLAIMER.md">benchmark qualifications</a> separate supported functionality from hardware-dependent throughput and treat consciousness-related outputs as numerical parameter measurements.</sub>
+<!-- impact-note:end -->
+
 # NeuroCHIMERA: GPU-Native Neuromorphic Computing with Hierarchical Number Systems and Emergent Consciousness Parameters
 <!--
 Project: NeuroCHIMERA
